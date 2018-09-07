@@ -1,0 +1,50 @@
+{
+  "name": "album-api",
+  "version": "1.0.0",
+  "description": "AWS album API",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src\"",
+    "build": "rimraf dist && babel src -D -d dist",
+    "start": "rimraf dist && babel src -D -d dist --no-comments && node dist/index.js",
+    "test": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MindeVieras/album-api.git"
+  },
+  "author": "Minde Vieras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MindeVieras/album-api/issues"
+  },
+  "homepage": "https://github.com/MindeVieras/album-api#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7",
+    "uuid": "^3.2.1",
+    "validator": "^9.2.0",
+    "winston": "^2.4.1",
+    "winston-mysql": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.15.0",
+    "nodemon": "^1.14.11",
+    "rimraf": "^2.6.2"
+  }
+}

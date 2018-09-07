@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "max-len": [1, 120, 2, {ignoreComments: true}],
+    "indent": ["error", 2],
+    "semi": ["error", "never"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "eol-last": ["error", "always"],
+    "prefer-arrow-callback": ["error", { "allowUnboundThis": false }],
+    "arrow-spacing": "error",
+  }
+}
